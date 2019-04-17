@@ -3,7 +3,7 @@
 <% @artists.each do |artist| %>
 
 <li>
-<%= link_to artist.name, artist_path(artist) %>
+<%= link_to artist.name, artists_index_path(artist) %>
 </li>
 
-<%end%>
+<% end %>
