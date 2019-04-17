@@ -12,17 +12,12 @@ art_1 = Artist.create(name: 'Drake')
 art_2 = Artist.create(name: 'Big Shaq')
 art_3 = Artist.create(name: 'Phyno')
 art_4 = Artist.create(name: 'Skepta')
-p Artist.all
-p "artist id" + art.id.to_s
-Album.destroy_all
+
 alb = Album.create(name: 'Life', artsit_id: art.id, image: 'https://static.hiphopdx.com/2015/07/Screen-Shot-2015-07-29-at-5.31.52-AM.png')
-p alb
 alb_1 = Album.create(name: 'Light', artsit_id: art_1.id, image: 'https://static.hiphopdx.com/2015/07/Screen-Shot-2015-07-29-at-5.31.52-AM.png')
 alb_2 = Album.create(name: 'Night', artsit_id: art_2.id, image: 'https://static.hiphopdx.com/2015/07/Screen-Shot-2015-07-29-at-5.31.52-AM.png')
 alb_3 = Album.create(name: 'Hour', artsit_id: art_3.id, image: 'https://static.hiphopdx.com/2015/07/Screen-Shot-2015-07-29-at-5.31.52-AM.png')
 alb_4 = Album.create(name: 'Second', artsit_id: art_4.id, image: 'https://static.hiphopdx.com/2015/07/Screen-Shot-2015-07-29-at-5.31.52-AM.png')
-
-p alb.id
 
 Song.destroy_all
 Song.create(name: 'Lonely', album_id:alb.id, audio: 'https://static.hiphopdx.com/2015/07/Screen-Shot-2015-07-29-at-5.31.52-AM.png')

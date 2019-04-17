@@ -2,8 +2,8 @@
 
 <% @artists.each do |artist| %>
 
-<li>
-<%= link_to artist.name, artists_index_path(artist) %>
-</li>
+<ul>
+<%= link_to artist.name, artists_index_path(artist), class: "btn btn-secondary btn-lg btn-block" %>
+</ul>
 
 <% end %>
