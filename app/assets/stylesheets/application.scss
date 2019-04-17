@@ -14,3 +14,24 @@
  *= require_self
  */
 @import "bootstrap";
+
+header{
+    background-color: black;
+    color: white;
+}
+body{
+    background-color: lightgray;
+}
+.btnArtist{
+    
+        border: 1px outset lightgray;
+        background-color: lightBlue;
+        height:50px;
+        width:50px;
+        cursor:pointer;
+     }
+     
+     .btnArtist:hover {
+        background-color: lightgray;
+        color:white;
+     }
